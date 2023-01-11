@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LuDe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700" rel="stylesheet" />
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+  </head>
+  <body class="text-cyan-500 bg-black min-h-screen">
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- Navbar (sit on top) -->
+    <nav class="bg-gray-900">
+      <div class="container mx-auto px-6 py-2 flex justify-between items-center">
+        <div class="hidden lg:block float-left">
+          <a class="font-bold hover:text-cyan-300 hover:border-teal-500" href="#">
+            Luminous Decibels
+          </a>
+        </div>
+        <div id="nav-title" class="font-italic px-4 py-1 border rounded text-2xl lg:text-4xl text-cyan-300 border-gray-600 items-center">
+          <span class="headline hover:text-cyan-200">LuDe</a>
+        </div>
+        <div class="float-right">
+          <ul class="inline-flex">
+            <li><a class="px-4 font-bold" title="Home" href="/">🛖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="multistepform" class="container mx-auto px-6 py-2 flex justify-between items-center">
+      <div id="multistepform-bg" class="relative flex items-center justify-center bg-gray-50 py-6 px-4 sm:px-6 lg:px-8 bg-gray-500 bg-no-repeat bg-cover relative items-center min-w-full min-h-fit">
+        <div class="absolute bg-black opacity-60 inset-0 z-0"></div>
+        <div class="sm:max-w-lg w-full p-10 bg-white rounded-xl z-10">
+
+          <div class="mt-8">
+            <h2 class="text-xl font-bold text-center text-gray-800 lg:text-xl">Generate a LuDe!</h2>
+            <p class="max-w-screen-md mx-auto text-center text-gray-500 md:text-lg">
+              Luminous Decibels gives a picture to your words.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <!-- multi form - start -->
+            <div class="text-gray-600">
+              <div class="container flex flex-col flex-wrap px-5 py-4 mx-auto">
+                <div id="ludedemo" class="flex flex-wrap mx-auto">
+                      <video
+                            controls
+                            loop
+                            muted="true"
+                            preload="auto"
+                            src="/media/poem-a-drinking-song.mp4"
+                            width="540px"
+                            height="960px"
+                            poster="/img/poster-poem-a-drinking-song.jpg"
+                      ></video>
+                </div>
+              </div>
+            </div>
+            <!-- multi form - end -->
+          </div>
+          <div id="notif" class="notif"></div>
+        </div>
+      </div>
+
+      <link href="/css/lude.css" rel="stylesheet" />
+      <link href="/css/lude-form.css" rel="stylesheet" />
+    </div>
+
+    <!-- Page content -->
+    <!-- About Section -->
+    <footer class="bg-black w-full">
+      <div class="container mx-auto w-full">
+        <div class="flex justify-center">
+          <div class="container w-full flex flex-col sm:flex-row justify-between text-center text-m text-cyan-300">
+            <span class="hover:text-cyan-200 w-full">LuDe is an AI powered Video creator that can use an Audio or Text provided for content.</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

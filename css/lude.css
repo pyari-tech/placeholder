@@ -1,0 +1,14 @@
+body {
+  font-family: "'Source Sans Pro', sans-serif";
+}
+
+#nav-title {
+  letter-spacing: 4px;
+}
+
+#notif {
+  color: red;
+  background-color: #e0da1069;
+  border-radius: 9999px;
+  text-align: center;
+}
