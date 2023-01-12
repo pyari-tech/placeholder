@@ -12,3 +12,8 @@ body {
   border-radius: 9999px;
   text-align: center;
 }
+
+.socialicons {
+  width: 30px;
+  height: 30px;
+}
